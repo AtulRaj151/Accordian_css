@@ -1,0 +1,86 @@
+#open-once{
+
+
+       background-color: #dccdb252;
+}
+
+#open-once h2{
+
+       padding: 0px;
+    margin: 0px;
+}
+
+#open-once p{
+
+	padding: 0px;
+    margin: 0px;
+    color: #d2c5c5;
+}
+
+#container-1{
+
+	    height: 50vh;
+    width: 100%;
+}
+
+
+.accordion-I label{
+
+	      cursor: pointer;
+    height: 35px;
+    width: 100%;
+    background: #7764e0;
+    display: block;
+    border: 1px solid black;
+    position: relative;
+}
+
+.accordion-I input{
+
+	display: none;
+}
+
+.item-content{
+
+	    max-height: 0;
+    overflow: hidden;
+ 
+}
+
+ input[name="clickonce"]:checked   ~ .item-content {
+
+    overflow: visible;
+    max-height: 6vh;
+}
+
+ input[name="clickx"]:checked   ~ .item-content {
+
+    overflow: visible;
+    max-height: 6vh;
+}
+
+
+
+.accordion-I label:after{
+
+	 content: "\f078";
+	 font-family: fontawesome;
+	 position: absolute;
+	 right: 1%;
+	 transform:  rotate(90deg);
+
+}
+
+ input[name="clickonce"]:checked   ~ label:after {
+
+   	 transform:  rotate(0deg);
+   	}
+
+
+ input[name="clickx"]:checked   ~ label:after {
+
+   	 transform:  rotate(0deg);
+   	}
+
+
+
